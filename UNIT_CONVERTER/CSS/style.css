@@ -1,0 +1,100 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+body
+{
+    background-color: aqua;
+}
+.container
+{
+    height: 400px;
+    width: 500px;
+    border: 2px solid black;
+    margin-top: 150px;
+    margin-left: 450px;
+    background-color: #ebf5fb;
+    border-radius: 50px;
+}
+.unit_con
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: blue;
+}
+.unit_1
+{
+    margin-top: 30px;
+    margin-left: 80px;
+    font-size: 25px;
+    color: blue;
+}
+.to_converter_1
+{
+    font-size: 25px;
+    color: blue;
+    position: relative;
+    top: -35px;
+    left: 290px;
+}
+.meter_one
+{
+    width: 180px;
+    height: 40px;
+    position: relative;
+    top: -20px;
+    left: 30px;
+    font-size: 20px;
+    font-family: arial;
+    color: blue;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.value_box
+{
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 300px;
+    height: 45px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.equal_to
+{
+    position: relative;
+    top: -18px;
+    left: 50px;
+    font-size: 30px;
+    color: blue;
+}
+.Centimeter_one
+{
+    position: relative;
+    top: -20px;
+    left: 70px;
+    font-size: 20px;
+    font-family: arial;
+    color: blue;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 180px;
+    height: 40px;
+}
+.result_one
+{
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 300px;
+    height: 45px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+input
+{
+    padding-left: 5px;
+    outline: none;
+}

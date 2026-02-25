@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+</head>
+
+<body onload="page_load()">
+    <!-- start main container -->
+    <div id="container">
+
+        <!-- start box office attandence -->
+        <div id="box">
+
+            <span id="office">office attandence software</span>
+            <h1 id="timer"></h1>
+            <label for="" id="t_in">Time in :- </label>
+            <input type="time" id="time_id" onchange="ONCHANGE_TIME_ID()">
+
+            <!-- start inside div box for text -->
+            <div id="inside_box">
+                <span id="punchin">punchin time :- 11:00 am to 11:05 am</span>
+                <span id="punchout">punchout time :- 05:00 pm to 05:15 pm</span>
+            </div>
+            <!-- end inside div box for text -->
+
+             <!-- start TIME IN BTN -->
+            <input type="button" value="TIME IN" id="time_in_btn" disabled onclick="ONCLICK_TIME_IN_BTN()">
+            <!-- end TIME IN BTN -->
+
+            <!-- start TIME OUT btn -->
+            <input type="button" value="TIME OUT" id="time_out_btn" disabled onclick="ONCLICK_TIME_OUT_BTN()">
+            <!-- end TIME OUT BTN -->
+
+        </div>
+        <!-- end box office attandence -->
+
+        <!-- start summary box -->
+        <div id="summary_box" style="display: none;">
+            <span id="checkin_time"></span>
+            <span id="checkout_time"></span>
+            <span id="total_time_spend"></span>
+        </div>
+        <!-- end summary box -->
+         
+    </div>
+    <!-- end main continer -->
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+body
+{
+    background-color: rgb(240, 240, 240);
+    position: relative;
+}
+label
+{
+    font-size: 25px;
+}
+
+#uname_id,#mobile_id,#gst_id
+{
+    height: 30px;
+    width: 250px;
+    font-size: 25px;
+    padding-left: 7px;
+    outline: none;
+}
+
+#op
+{
+    height: 30px;
+    width: 200px;
+    font-size: 25px;
+}
+
+#pay_btn
+{
+    height: 40px;
+    width: 150px;
+    font-size: 22px;
+}
+
+#mobile_show_msg
+{
+    font-size: 25px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 70px;
+    left: 965px;
+}
+
+#uname_lable
+{
+    position: absolute;
+    left: 500px;
+    top: 20px;
+}
+
+#uname_id
+{
+    position: absolute;
+    top: 20px;
+    left: 710px;
+}
+
+#mobile_lable
+{
+    position: absolute;
+    left: 500px;
+    top: 70px;
+}
+
+#mobile_id
+{
+    position: absolute;
+    top: 70px;
+    left: 710px;
+}
+
+#recharge_lable
+{
+    position: absolute;
+    left: 500px;
+    top: 120px;
+}
+
+#op
+{
+    position: absolute;
+    top: 120px;
+    left: 710px;
+}
+
+#total_amount_gst_lable
+{
+    position: absolute;
+    left: 500px;
+    top: 170px;
+}
+
+#gst_id
+{
+    position: absolute;
+    top: 170px;
+    left: 825px;
+}
+
+#pay_btn
+{
+    position: absolute;
+    top: 230px;
+    left: 650px;
+    &:disabled,
+    fieldset:disabled
+    {
+        cursor: not-allowed;
+    }
+}
+
+#one_box
+{
+    height: 250px;
+    width: 450px;
+    background-color: #fff;
+    position: absolute;
+    top: 310px;
+    left: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: none;
+}
+
+#span_mobile_id,#span_sim_id,#span_amount_id,#lable_pay_mode
+{
+    font-size: 30px;
+    margin-left: 20px;
+    line-height: 45px;
+}
+
+#op1
+{
+    height: 35px;
+    width: 180px;
+    font-size: 25px;
+    position: absolute;
+    top: 140px;
+    left: 235px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+#pay_btn_original
+{
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    position: absolute;
+    left: 140px;
+}
+
+.add_class_pay_btn
+{
+    &:disabled,
+    fieldset:disabled
+    {
+        cursor: not-allowed;
+    }
+}
+
+.add_class_pay_btn_original
+{
+    &:disabled,
+    fieldset:disabled
+    {
+        cursor: not-allowed;
+    }
+}
+
+#two_box
+{
+    height: 620px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-top: 450px;
+    margin-left: 500px;
+    margin-bottom: 20px;
+    position: relative;
+    display: none;
+}
+
+#summary_id
+{
+    font-size: 30px;
+    color: green;
+    position: absolute;
+    top: 5px;
+    left: 220px;
+}
+
+#r_s_id,#c_n_id,#m_n_id,#rpn_id,#ta_id,#validity_id,#r_d_id,#r_t_id,#e_d_id,#e_t_id,#p_m_id,#upi_id_span,#trans_id
+{
+    font-size: 25px;
+    margin-left: 30px;
+    line-height: 31px;
+    color: darkblue;
+    letter-spacing: 1px;
+}
+
+#Benefit_id
+{
+    font-size: 25px;
+    margin-left: 30px;
+    display: inline-block;
+    line-height: 31px;
+    color: darkblue;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+#upi_box
+{
+    height: 280px;
+    width: 380px;
+    /* border: 2px solid black; */
+    background-color: #fff;
+    position: absolute;
+    top: 295px;
+    left: 980px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: none;
+}
+
+#span_upi_id
+{
+    font-size: 25px;
+    color: red;
+}
+
+#upi_id_input
+{
+    height: 35px;
+    width: 330px;
+    font-size: 25px;
+    padding-left: 7px;
+    outline: none;
+}
+
+#span_upi_id,#upi_id_input
+{
+    line-height: 45px;
+    margin-left: 15px;
+}
+
+#upi_show_msg
+{
+    font-size: 25px;
+    margin-left: 15px;
+    line-height: 35px;
+}
+
+#span_example_one,#span_example_two,#span_example_three
+{
+    font-size: 25px;
+    margin-left: 15px;
+    color: green;
+}
+
+#upi_payment_btn
+{
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    margin-left: 110px;
+    margin-top: -5px;
+}
+
+.add_upi_btn
+{
+    &:disabled,
+    fieldset:disabled
+    {
+        cursor: not-allowed;
+    }
+}
+
+#credit_card_box
+{
+    height: 280px;
+    width: 400px;
+    /* border: 2px solid black; */
+    background-color: #fff;
+    position: absolute;
+    top: 295px;
+    left: 980px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: none;
+}
+
+#credi_card_number
+{
+    font-size: 25px;
+    color: red;
+}
+
+#credit_id
+{
+    height: 35px;
+    width: 330px;
+    font-size: 25px;
+    padding-left: 7px;
+    outline: none;   
+}
+
+#credi_card_number,#credit_id
+{
+    line-height: 45px;
+    margin-left: 15px;
+}
+
+#credit_show_msg
+{
+    font-size: 25px;
+    margin-left: 15px;
+    line-height: 35px;
+}
+
+#credit_payment_btn
+{
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: -5px;
+}
+
+#span_example_1,#span_example_2,#span_example_3
+{
+    font-size: 25px;
+    margin-left: 15px;
+    color: green;
+}
+
+.add_class_credit
+{
+    &:disabled,
+    fieldset:disabled
+    {
+        cursor: not-allowed;
+    }
+}
+
+#debit_card_box
+{
+    height: 280px;
+    width: 400px;
+    /* border: 2px solid black; */
+    background-color: #fff;
+    position: absolute;
+    top: 295px;
+    left: 980px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: none;
+}
+
+#debit_card_number
+{
+    font-size: 25px;
+    color: red;   
+}
+
+#debit_id
+{
+    height: 35px;
+    width: 330px;
+    font-size: 25px;
+    padding-left: 7px;
+    outline: none;
+}
+
+#debit_card_number,#debit_id
+{
+    line-height: 45px;
+    margin-left: 15px; 
+}
+
+#debit_show_msg
+{
+    font-size: 25px;
+    margin-left: 15px;
+    line-height: 35px;   
+}
+
+#debit_payment_btn
+{
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: -5px;
+}
+
+#span_example_d1,#span_example_d2,#span_example_d3
+{
+    font-size: 25px;
+    margin-left: 15px;
+    color: green;
+}
+
+.add_class_debit
+{
+    &:disabled,
+    fieldset:disabled
+    {
+        cursor: not-allowed;
+    }
+}
+
+#netbanking_box
+{
+    height: 280px;
+    width: 400px;
+    /* border: 2px solid black; */
+    background-color: #fff;
+    position: absolute;
+    top: 280px;
+    left: 980px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: none;
+}
+
+#netbanking_number
+{
+    font-size: 25px;
+    color: red;
+}
+
+#s_bank
+{
+    height: 35px;
+    width: 200px;
+    font-size: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+#netbanking_number,#s_bank
+{
+    line-height: 45px;
+    margin-left: 15px;
+}
+
+#bank_show_msg
+{
+    font-size: 25px;
+    margin-left: 15px;
+    line-height: 45px;  
+}
+
+#span_example_d_1,#span_example_d_2
+{
+    font-size: 25px;
+    margin-left: 15px;
+    color: green;
+    line-height: 35px;
+}
+
+#netbanking_payment_btn
+{
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: -5px;
+}
+
+.add_class_netbanking
+{
+    &:disabled,
+    fieldset:disabled
+    {
+        cursor: not-allowed;
+    }
+}

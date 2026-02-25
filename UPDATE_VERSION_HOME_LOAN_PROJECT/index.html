@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="print_wrapper">
+    <h1><img src="IMAGES/home.png" id="home_img">Home Loan EMI Calculator</h1>
+    <div id="input_boxes">
+
+        <label class="lable_one">Loan Amount(₹):</label><br>
+        <input type="text" id="loan_amount_id" class="input_field" onkeyup="VALIDATION()" onkeypress="return KEYCODE_LOGIC(event)" onfocus="ONFOCUS_MSG_SHOW('amount')" placeholder="Enter Amount"><br>
+        <span id="amount_show_msg"></span>
+        <br><br><br>
+        <label class="lable_one">Annual Interest Rate(%):</label><br>
+        <input type="text" id="anu_inte_rate_id" class="input_field" onkeyup="VALIDATION()" onkeypress="return KEYCODE_LOGIC(event)" onfocus="ONFOCUS_MSG_SHOW('rate')" placeholder="Enter Rate ex: 7.5"><br>
+        <span id="rate_show_msg"></span>
+        <br><br><br>
+        <label class="lable_one">Tenure (In Year):</label><br>
+        <input type="text" id="tenure_id" class="input_field" onkeyup="VALIDATION()" onkeypress="return KEYCODE_LOGIC(event)" oninput="F()" onfocus="ONFOCUS_MSG_SHOW('tenure')" placeholder="Enter Year ex: 5"><br>
+        <span id="tenure_show_msg"></span>
+        <br><br>
+        <input type="button" value="Calculate EMI" id="sub" onclick="ONCLICK_CALCULATE_EMI()" disabled>
+    </div>
+    <div id="box" style="display: none;">
+        <span id="OPA"></span><br>
+        <span id="R"></span><br>
+        <span id="TM"></span><br>
+        <span id="ME"></span><br>
+        <span id="TI"></span><br>
+        <span id="TP"></span>
+    </div>
+        <div id="summary_box" style="display: none;"></div>
+        <button style="display: none;" id="print_btn" onclick="PRINT_RECEIPT_BTN()">PRINT_RECEIPT</button>
+    </div>
+</body>
+</html>

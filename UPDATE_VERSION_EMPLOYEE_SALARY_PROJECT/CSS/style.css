@@ -1,0 +1,48 @@
+label
+{
+    font-size: 20px;
+}
+input
+{
+    height: 22px;
+    width: 200px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 5px;
+}
+select
+{
+    height: 30px;
+    width: 160px;
+    font-size: 20px;
+    outline: none;
+}
+#cl_yes,#cl_no
+{
+    font-size: 20px;
+    width: 15px;
+}
+span
+{
+    font-size: 22px;
+    margin-left: 4px;
+}
+#add_to_salary_box
+{
+    margin-top: 10px;
+    display: none;
+    font-size: 25px;
+}
+#hr_id,#travel_id,#sd_id,#mb_id,#food_id,#asa_id,#final_ets_id
+{
+    height: 25px;
+    width: 200px;
+    border: 3px solid green;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#hr_show_msg,#travel_show_msg,#sd_show_msg,#mb_show_msg,#food_show_msg
+{
+    margin-left: -3px;
+    font-size: 25px;
+}

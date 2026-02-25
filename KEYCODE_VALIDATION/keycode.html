@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="input-group">
+        <label for="mobile_id">Mobile :- </label>
+        <input type="text" id="mobile_id" onkeypress="return ONKEYPRESS_KEYCODE(event)" maxlength="10">
+    </div>
+</body>
+<style>
+    *
+    {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body
+    {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    label
+    {
+        font-size: 30px;
+    }
+    input
+    {
+        height: 40px;
+        width: 250px;
+        font-size: 25px;
+        padding-left: 5px;
+        outline: none;
+    }
+</style>
+<script>
+    function ONKEYPRESS_KEYCODE(event)
+    {
+        var KEYCODE = event.which;
+        var MOBILE = document.getElementById("mobile_id").value;
+        var MOBILE_LENGTH = MOBILE.length;
+        // alert(KEYCODE);
+        if (KEYCODE>=48 && KEYCODE<=57) 
+        {
+            return true;    
+        }
+        else
+        {
+            return false;
+        }
+    }
+</script>
+</html>

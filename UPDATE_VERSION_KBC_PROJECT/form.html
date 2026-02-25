@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Page</title>
+
+    <!-- link connection start -->
+    <link rel="stylesheet" href="CSS/form.css">
+    <script src="JS/form.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+    <!-- link connection end -->
+
+</head>
+<body onload="f()">
+    <!--  -->
+    <div id="user_box">
+        <h1 id="user_details">User Details</h1>
+    </div>
+    <!--  -->
+        <div id="left_box">
+            <h1 id="show_timer"></h1>
+            <img src="" id="sun_img">
+            <h1 id="good_msg"></h1>
+        </div>
+    <!--  -->
+    <div id="right_box">
+        <form action="terms_and_condition_page.html" onsubmit="return form_validation()">
+            <label for="uname_id">Name :- </label>
+            <input type="text" id="uname_id" placeholder="Enter Your Name" onfocus="ONFOCUS_NAME()" onkeyup="ONKEYUP_UNAME()" onkeypress="ONKEYPRESS_UNAME(event)">
+            <span id="uname_show_msg"></span>
+            <br><br>
+
+            <label for="age_id">Age :- </label>
+            <input type="text" id="age_id" placeholder="Enter Your Age" onfocus="ONFOCUS_AGE()" onkeyup="ONKEYUP_AGE()" onkeypress="ONKEYPRESS_AGE(event)">
+            <span id="age_show_msg"></span>
+            <br><br>
+
+            <label for="email_id">Email :- </label>
+            <input type="text" id="email_id" placeholder="Enter Your Email ID" onfocus="ONFOCUS_EMAIL()" onkeyup="ONKEYUP_EMAIL()" onkeypress="ONKEYPRESS_EMAIL(event)">
+            <span id="email_show_msg"></span>
+            <br><br>
+
+            <label for="pass_id">Password :- </label>
+            <input type="password" id="pass_id" placeholder="Enter Your Password" onfocus="ONFOCUS_PASS()" onkeyup="ONKEYUP_PASS()">
+            <i class="fa fa-eye-slash" id="slash_eye" onclick="SHOW_PASS()"></i>
+            <i class="fa fa-eye" id="normal_eye" onclick="HIDE_PASS()" style="display: none;"></i>
+            <span id="pass_show_msg"></span>
+            <br><br>
+
+            <label for="mobile_id">Mobile No :- </label>
+            <input type="text" id="mobile_id" placeholder="Enter Your Mobile No" onfocus="ONFOCUS_MOBILE()" onkeyup="ONKEYUP_MOBILE()" maxlength="10" onkeypress="ONKEYPRESS_MOBILE(event)">
+            <span id="mobile_show_msg"></span>
+            <br><br>
+
+            <label for="dob_id">Date Of Birth :- </label>
+            <input type="date" id="dob_id" onfocus="ONFOCUS_DOB()" onchange="ONCHANGE_DOB()">
+            <span id="dob_show_msg"></span>
+            <br><br>
+
+            <label for="tob_id">Time Of Birth :- </label>
+            <input type="time" id="tob_id" onfocus="ONFOCUS_TOB()" onchange="ONCHANGE_TOB()">
+            <span id="tob_show_msg"></span>
+            <br><br>
+
+            <label for="captcha_id">Enter Captcha :- </label>
+            <input type="text" id="captcha_id" placeholder="Enter Captcha" onfocus="ONFOCUS_CAPTCHA()" onkeyup="ONKEYUP_CAPTCHA()">
+            <span id="captcha_show_msg"></span>
+            <br>
+            <span id="captcha_original"></span>
+            <i class="fa fa-refresh" onclick="GENERATE_CAPTCHA()" id="ref_captcha_id"></i>
+            <br><br>
+
+            <label for="gender" id="gender_id">Gender :- </label>
+            <input type="radio" class="gen" name="gender" value="male" id="men_one" onchange="ONCHANGE_GENDER()"><label for="" id="men_id">Male</label>
+            <input type="radio" class="gen" name="gender" value="female" onchange="ONCHANGE_GENDER()"><label for="" id="female_id">Female</label>
+            <span id="gender_show_msg"></span>
+            <br><br>
+
+            <label for="hobby" id="hobby_id">Hobby :- </label>
+            <input type="checkbox" name="hobby" value="cricket" id="cric" onchange="ONCHANGE_HOBBY()" class="HOBBY_CLASS"><label for="">Cricket</label>
+            <input type="checkbox" name="hobby" value="football" onchange="ONCHANGE_HOBBY()" class="HOBBY_CLASS"><label for="">Football</label>
+            <input type="checkbox" name="hobby" value="singing" onchange="ONCHANGE_HOBBY()" class="HOBBY_CLASS"><label for="">Singing</label>
+            <input type="checkbox" name="hobby" value="reading" onchange="ONCHANGE_HOBBY()" class="HOBBY_CLASS"><label for="">Reading</label>
+            <span id="hobby_show_msg"></span>
+            <br>
+
+            <div id="password_validation_box">
+                <span id="pv_text">Password Validation</span><br>
+                <span id="six_digit">Minimum 6 Character</span><br>
+                <span id="one_upper">1 Uppercase Character</span><br>
+                <span id="one_lower">1 Lowercase Character</span><br>
+                <span id="one_number">1 Numeric case Character </span><br>
+                <span id="one_special_char">1 Special case Character</span><br>
+            </div>
+            
+            <div id="submit_box">
+                <input type="submit" value="Submit" id="sub" disabled>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

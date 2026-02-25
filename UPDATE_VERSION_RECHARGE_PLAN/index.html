@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <label for="" id="uname_lable">Customer Name :- </label>
+    <input type="text" id="uname_id" onkeypress="return ONKEYPRESS_CUSTOMER_KEYCODE(event)" onkeyup="ONKEYUP_UNAME()">
+    <br><br>
+    <label for="" id="mobile_lable">Mobile No :- </label>
+    <input type="text" id="mobile_id" onkeypress="return ONKEYPRESS_MOBILE(event)" maxlength="10" onkeyup="ONKEYUP_MOBILE()">
+    <span id="mobile_show_msg"></span>
+    <br><br>
+    <label for="" id="recharge_lable">Recharge Plan :- </label>
+    <select  id="op" onchange="ONCHANGE_RECHARGE_PLAN()">
+        <option value="1">Select Options</option>
+        <option value="299">₹299--28 Days</option>
+        <option value="799">₹799--84 Days</option>
+        <option value="629">₹629--56 Days</option>
+        <option value="899">₹899--90 Days</option>
+    </select>
+    <br><br>
+    <label for="" id="total_amount_gst_lable">Total Amount With 18% GST :- </label>
+    <input type="text" id="gst_id" readonly>
+    <br><br>
+    <input type="button" value="Payment Mode" id="pay_btn" disabled onclick="ONCLICK_PAY_MODE_BTN()"><br>
+    <!--  -->
+    <div id="one_box">
+        <span id="span_mobile_id"></span><br>
+        <span id="span_sim_id"></span><br>
+        <span id="span_amount_id"></span><br>
+        <label for="" id="lable_pay_mode">Payment Mode :- </label>
+        <select id="op1" onchange="ONCHANGE_PAY_MODE()">
+            <option value="sc">Select Options</option>
+            <option value="cash">Cash</option>
+            <option value="upi">Upi</option>
+            <option value="c_card">Credit Card</option>
+            <option value="d_card">Debit Card</option>
+            <option value="netbanking">Netbanking</option>
+        </select>
+        <br><br>
+        <button id="pay_btn_original" disabled onclick="ORIGINAL_PAYMENT()">PAYMENT</button>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div id="two_box">
+        <span id="summary_id">Summary</span>
+        <br><br><br>
+        <span id="r_s_id"></span><br>
+        <span id="c_n_id"></span><br>
+        <span id="m_n_id"></span><br>
+        <span id="rpn_id"></span><br>
+        <span id="ta_id"></span><br>
+        <span id="Benefit_id"></span><br>
+        <span id="validity_id"></span><br>
+        <span id="r_d_id"></span><br>
+        <span id="r_t_id"></span><br>
+        <span id="e_d_id"></span><br>
+        <p><span id="e_t_id"></span></p>
+        <p><span id="upi_id_span"></span></p>
+        <p><span id="trans_id"></span></p>
+        <p><span id="p_m_id"></span></p>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div id="upi_box">
+        <span id="span_upi_id">Enter Valid Upi ID :- </span><br>
+        <input type="text" id="upi_id_input" onkeyup="ONKEYUP_UPI_ID()"><br>
+        <span id="upi_show_msg"></span>
+        <br><br>
+        <span id="span_example_one"></span><br>
+        <span id="span_example_two"></span><br>
+        <span id="span_example_three"></span><br><br>
+        <button id="upi_payment_btn" disabled onclick="ONCLICK_UPI_ID()">PAYMENT</button>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div id="credit_card_box">
+        <span id="credi_card_number">Enter Credit Card Number :- </span><br>
+        <input type="text" id="credit_id" onkeyup="ONKEYUP_CREDIT_CARD_LENGTH()" maxlength="16" onkeypress="return ONKEYPRESS_KEYCODE_CREDIT(event)"><br>
+        <span id="credit_show_msg"></span>
+        <br><br>
+        <span id="span_example_1"></span><br>
+        <span id="span_example_2"></span><br>
+        <span id="span_example_3"></span><br><br>
+        <button id="credit_payment_btn" disabled onclick="ONCLICK_CREDIT_CARD_PAYMENT()">PAYMENT</button>
+    </div>
+    <!--  -->
+    <!--  -->
+     <div id="debit_card_box">
+        <span id="debit_card_number">Enter Debit Card Number :- </span><br>
+        <input type="text" id="debit_id" maxlength="16" onkeyup="ONKEYUP_DEBIT_CARD()"><br>
+        <span id="debit_show_msg"></span>
+        <br><br>
+        <span id="span_example_d1"></span><br>
+        <span id="span_example_d2"></span><br>
+        <span id="span_example_d3"></span><br><br>
+        <button id="debit_payment_btn" disabled onclick="ONCLICK_DEBIT_CARD_PAYMENT()">PAYMENT</button>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div id="netbanking_box">
+        <span id="netbanking_number">Select Bank:- </span><br>
+        <select id="s_bank" onchange="ONCHANGE_SELECT_BANK()" onfocus="ONFOCUS_SELECT_BANK()">
+            <option value="sc_bank">Select Bank</option>
+            <option value="sbi">SBI</option>
+            <option value="boi">BOI</option>
+            <option value="hdfc">HDFC</option>
+            <option value="icici">ICICI</option>
+            <option value="pnb">PNB</option>
+            <option value="axis">AXIS</option>
+            <option value="idbi">IDBI</option>
+            <option value="bob">BOB</option>
+        </select><br>
+        <span id="bank_show_msg"></span>
+        <br><br>
+        <span id="span_example_d_1"></span><br>
+        <span id="span_example_d_2"></span><br><br>
+        <button id="netbanking_payment_btn" disabled onclick="ONCLICK_NETBANKING_PAYMENT()">PAYMENT</button>
+    </div>
+    <!--  -->
+</body>
+</html>

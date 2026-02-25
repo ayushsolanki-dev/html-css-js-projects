@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <label for="year_id">Year :- </label>
+    <input type="text" id="year_id" onkeypress="CHECK_YEAR_NUM(event)" onkeyup="ONKEYUP_YEAR()" class="original">
+    <br><br>
+    <label for="">Select Months :- </label>
+        <select id="op" onchange="CHECK_MONTHS()" disabled class="original">
+        <option value="sc">Select Months</option>
+        <option value="jan">Jan</option>
+        <option value="feb">Feb</option>
+        <option value="mar">Mar</option>
+        <option value="apr">Apr</option>
+        <option value="may">May</option>
+        <option value="jun">Jun</option>
+        <option value="jul">Jul</option>
+        <option value="aug">Aug</option>
+        <option value="sep">Sep</option>
+        <option value="oct">Oct</option>
+        <option value="nov">Nov</option>
+        <option value="dec">Dec</option>
+    </select><span id="leap_year_msg"></span>
+    <br><br>
+    <label for="">Total Days In Months :- </label>
+    <input type="text" id="tdim" readonly disabled class="original">
+    <br><br>
+    <label for="">Employee Per Day Salary :- </label>
+    <input type="text" id="epds" onkeypress="CHECK_EPDS_NUM(event)" onkeyup="ONKEYUP_EPDS()" onfocus="ONFOCUS_EPDS()"        disabled class="original">
+    <span id="epds_show_msg"></span>
+    <br><br>
+    <label for="">Employee Present Days :- </label>
+    <input type="text" id="epd" onkeyup="ONKEYUP_EPD()" onkeypress="CHECK_EPD_NUM(event)" disabled class="original">
+    <br><br>
+    <label for="">Employee Absent Days :- </label>
+    <input type="text" id="ead" readonly disabled class="original">
+    <br><br>
+    <label for="">Allow CL :- </label>
+    <input type="radio" name="cl_radio" id="cl_yes" value="yes" onclick="CHECK_CL_YES()" disabled class="original">Yes
+    <input type="radio" name="cl_radio" id="cl_no" value="no" onclick="CHECK_CL_NO()" disabled class="original">No
+    <br><br>
+    <div id="cl_box" style="display: none;">
+        <label for="">Enter CL Days :- </label>
+        <input type="text" id="ecd" onkeyup="ONKEYUP_ECD()" onkeypress="CHECK_ECD_NUM(event)" disabled class="original">
+        <br><br>
+        <label for="">Employee Total Present Days :- </label>
+        <input type="text" id="etpd" readonly disabled class="original">
+        <br><br>
+        <label for="">Employee Total Absent Days :- </label>
+        <input type="text" id="etad" readonly disabled class="original">
+        <br><br>
+    </div>
+    <label for="">Employee Basic Salary :- </label>
+    <input type="text" id="es" readonly disabled class="original">
+    <div id="add_to_salary_box">
+        <span>Addition To Salary :- </span><br>
+        <input type="text" id="hr_id" placeholder="HR %" onkeyup="ONKEYUP_ADDITION_SALARY()" onkeypress="return CHECK_ONKEYPRESS_KEYCODE(event)" class="zero_not_allowed">
+        <span id="hr_show_msg"></span><br>
+        <input type="text" id="travel_id" placeholder="Travel %" onkeyup="ONKEYUP_ADDITION_SALARY()" onkeypress="return CHECK_ONKEYPRESS_KEYCODE(event)" class="zero_not_allowed">
+        <span id="travel_show_msg"></span><br>
+        <input type="text" id="sd_id" placeholder="S.D %" onkeyup="ONKEYUP_ADDITION_SALARY()" onkeypress="return CHECK_ONKEYPRESS_KEYCODE(event)" class="zero_not_allowed">
+        <span id="sd_show_msg"></span><br>
+        <input type="text" id="mb_id" placeholder="M.B%" onkeyup="ONKEYUP_ADDITION_SALARY()" onkeypress="return CHECK_ONKEYPRESS_KEYCODE(event)" class="zero_not_allowed">
+        <span id="mb_show_msg"></span><br>
+        <input type="text" id="food_id" placeholder="FOOD %" onkeyup="ONKEYUP_ADDITION_SALARY()" onkeypress="return CHECK_ONKEYPRESS_KEYCODE(event)" class="zero_not_allowed">
+        <span id="food_show_msg"></span>
+        <br><br>
+        Addition Salary Amount :- <input type="text" id="asa_id" placeholder="Final Amount" readonly>
+        <br><br>
+        Employee Total Salary :- <input type="text" id="final_ets_id" placeholder="Employee Total Salary" readonly>
+    </div>
+</body>
+</html>

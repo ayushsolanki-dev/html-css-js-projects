@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <!-- first div start -->
+    <div class="box_one">
+        <h1 class="abc_one">ABC INSTITUTE</h1>
+        <h4 class="address_one">Pipliyahana Indore(M.p),ph.88152-10960</h4>
+        <h1 class="border_one">
+            <span class="receipt_one">Receipt</span>
+        </h1>
+        <h1 class="date_btn"><span style="font-family: arial;">Date :- <input type="date" class="date_size" id="date_id" onchange="ONCHANGE_DATE()"></span></h1>
+        <p class="line_border"></p>
+        <span class="n_student">Name Of Student :- <input type="text" class="input_s_name" id="uname" onkeypress="ONKEYPRESS_KEYCODE(event)" onkeyup="ONKEYUP_STUDENT_NAME()"></span>
+        <!-- first div end -->
+
+        <!-- second div start -->
+         <div>
+            <table class="table1">
+                <!-- first table start -->
+                <th style="border: 1px solid black;">COURCES OFFERED BY INSTITUTE</th>
+                <tr style="border: 1px solid black;"><td style="border: 1px solid black;">Cources</td></tr>
+                <tr style="border: 1px solid black;"><td style="border: 1px solid black;">Pay Fees</td></tr>
+                <tr style="border: 1px solid black;"><td style="border: 1px solid black;">GST Include
+                    <select name="" id="gst" onchange="calculator_gst()" disabled>
+                        <option value="sc">GST %</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+                    </select>
+                </td></tr>
+                <tr style="border: 1px solid black;"><td style="border: 1px solid black;">CGST (%)</td></tr>
+                <tr style="border: 1px solid black;"><td style="border: 1px solid black;">SGST (%)</td></tr>
+                <tr style="border: 1px solid black;"><td style="border: 1px solid black;">Total Fee Including Tax</td></tr>
+                <!-- first table end -->
+            </table>
+
+            <!-- second table start -->
+            <table class="table2">
+                <th style="border: 1px solid black;">COURCES FEES</th>
+                <tr style="border: 1px solid black;"><td style="border: 1px solid black;">
+                    <select id="cource" style="font-size: 20px;" onchange="ONCHANGE_CHECK_COURSES()">
+                        <option value="sc1">select cources</option>
+                        <option value="java">JAVA</option>
+                        <option value="python">PYTHON</option>
+                        <option value="c/c++">C/C++</option>
+                    </select></td></tr>
+                    <tr style="border: 1px solid black;"><td style="border: 1px solid black;"><input type="text" style="font-size: 20px;" placeholder="Enter Amount" id="input1" onkeypress="ONKEYPRESS_KEYCODE_AMOUNT(event)" onkeyup="ONKEYUP_AMOUNT()"></td></tr>
+                    <tr style="border: 1px solid black;"><td style="border: 1px solid black;"><input type="text" style="font-size: 20px;" id="first" value="" readonly disabled></td></tr>
+                    <tr style="border: 1px solid black;"><td style="border: 1px solid black;"><input type="text" style="font-size: 20px;" id="second" value="" readonly disabled></td></tr>
+                    <tr style="border: 1px solid black;"><td style="border: 1px solid black;"><input type="text" style="font-size: 20px;" id="third" value="" readonly disabled></td></tr>
+                    <tr style="border: 1px solid black;"><td style="border: 1px solid black;"><input type="text" style="font-size: 20px;" id="fourth" value="" readonly disabled></td></tr>
+            </table>
+            <button id="discount_btn" onclick="ONCLICK_DISCOUNT_BTN()" disabled>DISCOUNT_BTN</button>
+         </div><br><br>
+         <!-- second table end -->
+         <button class="submit" onclick="window.print()" id="receipt_btn">PRINT RECEIPT</button>
+         <br><br>
+         <span id="error_show_msg"></span>
+         <div id="discount_btn_offer" style="display: none;">
+            <span id="t_p_d"></span><br><br>
+            <span id="d_price"></span><br><br>
+            <span id="ori_amount_id"></span><br><br>
+            <span id="pay_fee"></span>
+         </div>
+    </div>
+</body>
+</html>

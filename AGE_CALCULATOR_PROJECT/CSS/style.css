@@ -1,0 +1,41 @@
+body
+{
+    position: relative;
+}
+
+#box_one
+{
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    font-size: 25px;
+}
+#dob_id
+{
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+}
+
+#dob_btn
+{
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+}
+
+#box_two
+{
+    height: 150px;
+    width: 350px;
+    border: 2px solid red;
+    position: absolute;
+    top: 320px;
+    left: 650px;
+    display: none;
+}
+span
+{
+    font-size: 30px;
+    margin-left: 10px;
+}

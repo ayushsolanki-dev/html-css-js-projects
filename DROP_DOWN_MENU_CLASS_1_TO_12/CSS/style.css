@@ -1,0 +1,21 @@
+select
+{
+    outline: none;
+    font-size: 20px;
+}
+label
+{
+    font-size: 25px;
+}
+#ten_box
+{
+    display: none;
+}
+#box_11
+{
+    display: none;
+}
+#box_12
+{
+    display: none;
+}

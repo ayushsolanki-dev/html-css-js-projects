@@ -1,0 +1,146 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+}
+
+#home_img
+{
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+}
+h1
+{
+    font-size: 35px;
+    margin-left: 430px;
+    margin-top: 30px;
+}
+
+#input_boxes
+{
+    margin-left: 420px;
+    margin-top: 40px;
+}
+
+.lable_one
+{
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    line-height: 5px;
+    text-transform: capitalize;
+}
+.input_field
+{
+    height: 40px;
+    width: 750px;
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+
+#sub
+{
+    height: 40px;
+    width: 750px;
+    font-size: 25px;
+
+    &:disabled,
+    fieldset:disabled
+    {
+        cursor: not-allowed;
+    }
+}
+
+#box
+{
+    font-size: 30px;
+    margin-left: 420px;
+    margin-top: 20px;
+}
+
+#summary_box
+{
+    margin-left: 420px;
+    margin-top: 30px;
+}
+
+#one_table
+{
+    height: 40px;
+    width: 750px;
+    font-size: 22px;
+}
+
+tr
+{
+    height: 40px;
+    width: 750px;
+    font-size: 22px;
+}
+
+#print_btn
+{
+    height: 40px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    margin-left: 1200px;
+    margin-top: -50px;
+}
+
+#amount_show_msg,#rate_show_msg,#tenure_show_msg
+{
+    font-size: 25px;
+    position: fixed;
+}
+
+@media print
+{
+  body
+  {
+    text-align: right;
+  }
+  
+  h1,
+  #input_boxes,
+  #box,
+  #summary_box
+  {
+    text-align: left;
+    width: 750px;
+    margin: 0 20px 20px 0;
+  }
+
+  #print_btn,#sub
+  {
+    text-align: center;
+    width: 750px;
+    margin: 0 20px 20px 0;
+  }
+
+  #one_table, tr
+  {
+    width: 750px;
+  }
+
+  #sub,#print_btn,#input_boxes
+  {
+    display: none !important;
+  }
+}
+
+th
+{
+    height: 50px;
+    background-color: rgb(218, 239, 239);
+}
+

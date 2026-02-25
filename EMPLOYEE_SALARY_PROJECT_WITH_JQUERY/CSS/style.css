@@ -1,0 +1,32 @@
+body
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+input
+{
+    height: 25px;
+    width: 200px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 5px;
+    border: 1px solid black;
+}
+#cl_yes,#cl_no
+{
+    font-size: 20px;
+    width: 15px;
+}
+select
+{
+    outline: none;
+    border: 1px solid black;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+}
+#epds_msg
+{
+    font-size: 23px;
+    margin-left: 4px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  -->
+    <link rel="stylesheet" href="CSS/game.css">
+    <script src="JS/game_page.js"></script>
+    <!--  -->
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--  -->
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--  -->
+</head>
+<body onload="ONLOAD_EVENT()">
+    <div id="container">
+        <div id="rupees_box">
+            <button class="rupees_class" disabled>70000000</button>
+            <button class="rupees_class" disabled>1000000</button>
+            <button class="rupees_class" disabled>90000</button>
+            <button class="rupees_class" disabled>80000</button>
+            <button class="rupees_class" disabled>70000</button>
+            <button class="rupees_class" disabled>60000</button>
+            <button class="rupees_class" disabled>50000</button>
+            <button class="rupees_class" disabled>40000</button>
+            <button class="rupees_class" disabled>30000</button>
+            <button class="rupees_class" disabled>20000</button>
+            <button class="rupees_class" disabled>10000</button>
+        </div>
+        <img src="./IMAGES/kbc_hotseat (1).jpg" id="img_hotseat">
+
+        <button class="internal_kbc_img_btn" disabled id="fifty_fifty_btn_id" onclick="ONCLICK_FIFTY_FIFTY_BTN()"><img src="./IMAGES/5050lifeline.jpeg" class="img_three"></button>
+        <button class="internal_kbc_img_btn" disabled id="audience_poll_btn_id" onclick="ONCLICK_AUDIENCE_POLL_BTN()"><img src="./IMAGES/audience_poll.jpeg" class="img_three"></button>
+        <div style="display: none;" id="audience_lifeline_btn">
+            <p>Option A: <span id="optionA"></span></p>
+            <p>Option B: <span id="optionB"></span></p>
+            <p>Option C: <span id="optionC"></span></p>
+            <p>Option D: <span id="optionD"></span></p>
+            <button id="close_btn_id" onclick="ONCLICK_CLOSE_BTN()">Close</button>
+        </div>       
+        <button class="internal_kbc_img_btn" disabled id="reverse_btn_id" onclick="ONCLICK_REVERSE_BTN()"><img src="./IMAGES/exchange_question.jpeg" class="img_three"></button>
+        
+        <button id="play_btn_id" class="btn_play_quit_next" onclick="ONCLICK_PLAY_GAME_BTN()" disabled style="cursor: not-allowed;">Play</button>
+        <button id="quit_btn_id" class="btn_play_quit_next" onclick="ONCLICK_QUIT_GAME_BTN()" disabled>Quit</button>
+        <button id="next_btn_id" class="btn_play_quit_next" onclick="NEXT_QUESTIONS()" disabled>Next</button>
+
+        <div id="q_box"></div>
+        <hr id="one_hr_line">
+        <span id="timer"></span>
+        <hr id="second_hr_line">
+        <div id="options_box">
+            <button id="option_0" class="option_button" onclick="CHECK_ANSWER(0)" disabled></button><br>
+            <button id="option_1" class="option_button" onclick="CHECK_ANSWER(1)" disabled></button><br>
+            <button id="option_2" class="option_button" onclick="CHECK_ANSWER(2)" disabled></button><br>
+            <button id="option_3" class="option_button" onclick="CHECK_ANSWER(3)" disabled></button>
+        </div>
+    </div>
+    <audio autoplay>
+        <source src="MUSIC/short_title_track_audio.mpeg" type="audio/mpeg">
+    </audio>
+    <audio src="MUSIC/timer_45_second_audio.mpeg" id="timer_audio_id"></audio>
+    <audio src="MUSIC/right_answer.mp3" id="right_audio_id"></audio>
+    <audio src="MUSIC/wrong_answer.mp3" id="wrong_audio_id"></audio>
+</body>
+</html>

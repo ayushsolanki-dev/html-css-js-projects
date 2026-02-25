@@ -1,0 +1,188 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+body
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(90, 14, 90);
+    position: relative;
+}
+
+#amitji_guest_reward_id
+{
+    height: 350px;
+    width: 800px;
+    border-radius: 15px;
+    position: absolute;
+    top: 80px;
+    left: 350px;
+}
+
+#golden_watermark_id
+{
+    height: 100px;
+    width: 110px;
+    border-radius: 50px;
+    position: absolute;
+    top: 140px;
+    left: 610px;
+}
+
+#congratulations_id
+{
+    height: 60px;
+    width: 750px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 350px;
+    left: 375px;
+    background-color: rgb(118, 10, 118);
+    border-radius: 10px;
+}
+
+#won_price_text
+{
+    text-transform: capitalize;
+    color: gold;
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 500;
+}
+
+#amount_id
+{
+    color: #fff;
+    text-transform: capitalize;
+    color: yellow;
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    left: 460px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: bold;
+}
+
+#congratulation_emogi_id_one
+{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 8px;
+    left: 700px;
+}
+
+#congratulation_emogi_id_two
+{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 8px;
+    left: 660px;
+}
+
+#thank_you_id
+{
+    font-size: 35px;
+    color: gold;
+    text-transform: capitalize;
+    position: absolute;
+    top: 445px;
+    left: 415px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+#we_hope_id
+{
+    font-size: 30px;
+    color: gold;
+    position: absolute;
+    top: 505px;
+    left: 540px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+#developed_id
+{
+    font-size: 35px;
+    color: gold;
+    position: absolute;
+    top: 560px;
+    left: 510px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+#ayush_id
+{
+    font-size: 35px;
+    color: yellow;
+    position: absolute;
+    top: 560px;
+    left: 740px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+#smile_attitude_id
+{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 565px;
+    left: 960px;
+}
+
+#back_to_welcome_btn
+{
+    height: 40px;
+    width: 230px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    background-color: yellow;
+    color: purple;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#back_to_welcome_btn:hover
+{
+    background-color: goldenrod;
+    cursor: pointer;
+    color: yellow;
+}
+
+#div_back_to_welcone
+{
+    position: absolute;
+    top: 630px;
+    left: 620px;
+}
+
+.better_luck_next_time
+{
+    margin-left: 15px;
+}
+
+.tough_start
+{
+    margin-left: 70px;
+}

@@ -1,0 +1,295 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    /* box-sizing: border-box; */
+}
+body
+{
+    background-image: url(/IMAGES/kbc_background_img.png);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+span
+{
+    font-size: 18px;
+    color: red;
+    font-weight: 500;
+}
+
+#show_timer 
+{
+    font-size: 40px;
+    background-color: #fff;
+    width: 350px;
+    text-align: center;
+    border-radius: 25px 0px 25px 0px;
+
+}
+
+#left_box
+{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+#sun_img
+{
+    height: 340px;
+    width: 340px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 15px;
+}
+
+#good_msg
+{
+    margin-top: 15px;
+    font-size: 40px;
+    background-color: #fff;
+    width: 350px;
+    text-align: center;
+    border-radius: 0px 25px 0px 25px;
+}
+
+#user_details
+{
+    margin-top: 15px;
+    font-size: 40px;
+    background-color: #fff;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+}
+#user_box
+{
+    margin-left: 850px;
+}
+
+#right_box
+{
+    height: 640px;
+    width: 920px;
+    border: 3px solid greenyellow;
+    margin-left: 590px;
+    margin-top: -500px;
+}
+
+label
+{
+    font-size: 23px;
+    color: #fff;
+    font-weight: 100;
+}
+
+#dob_id
+{
+    margin-left: 5px;
+    height: 25px;
+    width: 140px;
+    font-size: 20px;
+    padding-left: 6px;
+    outline: none;
+    font-weight: 100;
+    border: 3px solid black;
+}
+
+#tob_id
+{
+    height: 25px;
+    width: 140px;
+    font-size: 20px;
+    padding-left: 6px;
+    outline: none;
+    font-weight: 100;
+    border: 3px solid black;
+}
+
+#mobile_id
+{
+    margin-left: 31px;
+    height: 25px;
+    width: 200px;
+    font-size: 20px;
+    padding-left: 6px;
+    outline: none;
+    font-weight: 100;
+    border: 3px solid black;
+}
+
+#pass_id
+{
+    margin-left: 42px;
+    height: 25px;
+    width: 200px;
+    font-size: 20px;
+    padding-left: 6px;
+    outline: none;
+    font-weight: 100;
+    border: 3px solid black;
+}
+
+#email_id
+{
+    margin-left: 75px;
+    height: 25px;
+    width: 200px;
+    font-size: 20px;
+    padding-left: 6px;
+    outline: none;
+    font-weight: 100;
+    border: 3px solid black;
+}
+
+#age_id
+{
+    margin-left: 92px;
+    height: 25px;
+    width: 200px;
+    font-size: 20px;
+    padding-left: 6px;
+    outline: none;
+    font-weight: 100;
+    border: 3px solid black;
+}
+
+#uname_id
+{
+    margin-left: 75px;
+    height: 25px;
+    width: 200px;
+    font-size: 20px;
+    padding-left: 6px;
+    outline: none;
+    font-weight: 100;
+    border: 3px solid black;
+}
+#captcha_id
+{
+    height: 25px;
+    width: 200px;
+    font-size: 20px;
+    padding-left: 6px;
+    outline: none;
+    font-weight: 100;
+    border: 3px solid black;
+}
+
+#sub
+{
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+#sub:hover
+{
+    background-color: gray;
+}
+
+#gender_id
+{
+    /* margin-left: 0px; */
+    font-size: 25px;
+}
+
+#men_id,#female_id
+{
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+#hobby_id
+{
+    /* margin-left: 0px; */
+    font-size: 22px;
+}
+
+#password_validation_box
+{
+    height: 127px;
+    width: 190px;
+    border: 1px solid red;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
+#submit_box
+{
+    margin-top: -60px;
+}
+
+.gen
+{
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#pv_text
+{
+    margin-left: 20px;
+}
+
+#men_one
+{
+    margin-left: 50px;
+}
+
+#cric
+{
+    margin-left: 68px;
+}
+
+.HOBBY_CLASS
+{
+    cursor: pointer;
+}
+
+#slash_eye,#normal_eye
+{
+    margin-left: -30px;
+    font-size: 20px;
+}
+
+#pass_show_msg
+{
+    margin-left: 5px;
+}
+
+#ref_captcha_id
+{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#captcha_original
+{
+    margin-left: 180px;
+    font-size: 28px;
+    background-color: yellow;
+    width: 120px;
+    display: -webkit-inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub
+{
+    border-radius: 10px;
+    background-color: grey;
+
+    &:disabled,
+    fieldset:disabled
+    {
+        cursor: not-allowed;
+    }
+}

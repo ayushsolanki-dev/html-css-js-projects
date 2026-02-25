@@ -1,0 +1,274 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+#container
+{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #8360c3;
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+    background: linear-gradient(to right, #2ebf91, #8360c3);
+}
+
+#welcome_ji
+{
+    position: absolute;
+    top: 25px;
+    left: 545px;
+    font-size: 40px;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+
+#left_box
+{
+    height: 500px;
+    width: 600px;
+    border: 5px solid  rgb(89, 89, 230);
+    position: absolute;
+    top: 90px;
+    left: 80px;
+    box-shadow: 0px 0px 5px 5px rgb(89, 89, 230);
+    border-radius: 30px;
+}
+#right_box
+{
+    height: 471px;
+    width: 600px;
+    position: absolute;
+    top: 90px;
+    left: 840px;
+    box-shadow: 0px 0px 5px 5px rgb(89, 89, 230);
+    border-radius: 30px;
+    border: 5px solid  rgb(89, 89, 230);
+}
+
+#child_left_box
+{
+    height: 100px;
+    width: 600px;
+    border: 5px solid  rgb(89, 89, 230);
+    position: absolute;
+    top: 610px;
+    left: 80px;
+    box-shadow: 0px 0px 5px 5px rgb(89, 89, 230);
+    border-radius: 30px;
+}
+
+#child_right_box
+{
+    height: 140px;
+    width: 700px;
+    border: 5px solid  rgb(89, 89, 230);
+    position: absolute;
+    top: 580px;
+    left: 800px;
+    box-shadow: 0px 0px 5px 5px rgb(89, 89, 230);
+    border-radius: 30px;
+}
+#left_textarea_id
+{
+    user-select: none;
+    height: 491px;
+    width: 590px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+    letter-spacing: 1px;
+    background-color: white;
+    pointer-events: none;
+}
+
+#right_textarea_id
+{
+    height: 460px;
+    width: 590px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+#enter_word
+{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 30px;
+    color: white;
+}
+
+#word_id
+{
+    position: absolute;
+    top: 28px;
+    left: 220px;
+    height: 40px;
+    width: 230px;
+    font-size: 25px;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#start_btn
+{
+    position: absolute;
+    top: 40px;
+    left: 460px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+}
+
+/* #start_btn:hover
+{
+    font-style: italic;
+    background-color: #8360c3;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px #8360c3;
+    border: 0px;
+} */
+
+#timer_box
+{
+    height: 40px;
+    width: 115px;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 705px;
+    top: 250px;
+}
+
+#hour_id
+{
+    font-size: 30px;
+}
+
+#dot_one
+{
+    font-size: 30px;
+    position: absolute;
+    top: -2px;
+}
+
+#minute_id
+{
+    font-size: 30px;
+    position: absolute;
+    left: 38px;
+}
+
+#dot_two
+{
+    font-size: 30px;
+    position: absolute;
+    top: -2px;
+    left: 69px;
+}
+
+#second_id
+{
+    font-size: 30px;
+    position: absolute;
+    left: 78px;
+}
+
+#submit
+{
+    position: absolute;
+    top: 10px;
+    left: 460px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    background-color: gray;
+}
+
+/* #submit:hover
+{
+    font-style: italic;
+    background-color: rgb(173, 255, 47);
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px rgb(189, 227, 131);
+    border: 0px;
+    font-weight: 600;
+    color: blueviolet;
+} */
+#cw
+{
+    position: absolute;
+    font-size: 24px;
+    color: whitesmoke;
+    top: 90px;
+    left: 10px;
+}
+
+#correct_id
+{
+    position: absolute;
+    height: 30px;
+    width: 150px;
+    top: 89px;
+    left: 175px;
+    font-size: 20px;
+    padding-left: 5px;
+    outline: none;
+    border-radius: 8px;
+}
+
+#icw
+{
+    position: absolute;
+    font-size: 24px;
+    color: whitesmoke;
+    top: 90px;
+    left: 330px;
+}
+
+#incorrect_id
+{
+    position: absolute;
+    height: 30px;
+    width: 150px;
+    top: 89px;
+    left: 515px;
+    font-size: 20px;
+    padding-left: 5px;
+    outline: none;
+    border-radius: 8px;
+}
+
+#per_second
+{
+    position: absolute;
+    font-size: 25px;
+    top: 10px;
+    left: 20px;
+    color: whitesmoke;
+}
+#total_word
+{
+    position: absolute;
+    font-size: 25px;
+    top: 45px;
+    left: 20px;
+    color: whitesmoke;
+}

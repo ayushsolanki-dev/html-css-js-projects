@@ -1,0 +1,39 @@
+#main_img
+{
+    height: 300px;
+    width: 400px; 
+    margin-top: 100px;
+    margin-left: 520px;  
+}
+#like_box img
+{
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: multiply;
+}
+#like_box
+{
+    margin-top: 20px;
+    margin-left: 570px;
+}
+#like_msg
+{
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+#dis_like_box img
+{
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: multiply;
+}
+#dis_like_box
+{
+    margin-left: 50px;
+}
+#dis_like_msg
+{
+    font-size: 40px;
+    margin-left: 40px;
+}

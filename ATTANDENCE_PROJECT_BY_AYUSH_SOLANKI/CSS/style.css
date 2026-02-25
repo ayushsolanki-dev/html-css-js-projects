@@ -1,0 +1,150 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+#container
+{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    position: relative;
+}
+
+#box
+{
+    height: 480px;
+    width: 480px;
+    border: 1px solid whitesmoke;
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 3px whitesmoke;
+}
+
+#office
+{
+    margin-left: 20px;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: whitesmoke;
+    position: absolute;
+    top: 10px;
+}
+
+#inside_box
+{
+    height: 130px;
+    width: 420px;
+    border: 1px solid white;
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    box-shadow: 0px 0px 3px 3px whitesmoke;
+    border-radius: 10px;
+}
+
+
+#punchin
+{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+#punchout
+{
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+#time_in_btn
+{
+    margin-top: 270px;
+    margin-left: 50px;
+    height: 70px;
+    width: 140px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 2px whitesmoke;
+    background-color: #A8C0FF;
+}
+
+#time_out_btn
+{
+    position: absolute;
+    top: 375px;
+    left: 260px;
+    height: 70px;
+    width: 140px;
+    font-size: 25px;    
+    font-weight: bold;
+    border-radius: 20px;
+    /* border: 3px solid blue; */
+    box-shadow: 0px 0px 2px 2px whitesmoke;
+    background-color: #A8C0FF;
+}
+
+#t_in
+{
+    position: absolute;
+    font-size: 30px;
+    top: 120px;
+    left: 80px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#time_id
+{
+    position: absolute;
+    top: 120px;
+    left: 220px;
+    height: 35px;
+    width: 180px;
+    font-size: 20px;
+}
+
+
+#summary_box
+{
+    height: 380px;
+    width: 480px;
+    border: 1px solid whitesmoke;
+    position: absolute;
+    top: 120px;
+    left: 850px;
+    box-shadow: 0px 0px 3px 3px whitesmoke;
+    border-radius: 20px;
+}
+
+#checkin_time,#checkout_time,#total_time_spend
+{
+    display: flex;
+    font-size: 30px;
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+#timer
+{
+    margin-top: 60px;
+    margin-left: 150px;
+    font-size: 40px;
+    color:aqua;
+}

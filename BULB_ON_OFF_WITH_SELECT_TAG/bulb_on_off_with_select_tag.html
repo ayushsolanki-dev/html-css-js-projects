@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+    <!--  -->
+</head>
+<body>
+    <label id="select_bulb">Select Bulb :- </label>
+    <select id="op" onchange="ONCHANGE_BULB()">
+        <option value="sc">Select Options</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+    </select>
+    <img src="IMAGES/off_bulb.png" id="off_bulb_img" class="ALL_BULB_IMG">
+    <button id="on_btn" class="all_btn" disabled  onclick="ONCLICK_ON_BTN()">ON</button>
+    <button id="off_btn" class="all_btn" disabled  onclick="ONCLICK_OFF_BTN()">OFF</button>
+</body>
+</html>

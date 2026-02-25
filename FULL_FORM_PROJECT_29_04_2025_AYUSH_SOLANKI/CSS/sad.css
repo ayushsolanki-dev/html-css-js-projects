@@ -1,0 +1,40 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    background-image: linear-gradient(135deg, #071952 10%, #088395 100%);
+}
+div img
+{
+    height: 300px;
+    width: 330px;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+h1
+{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    margin-left: 400px;
+}
+a
+{
+    color: blue;
+    font-size: 20px;
+    position: relative;
+    top: 50px;
+    left: 400px;
+    text-decoration: underline;
+}
+a:hover
+{
+    color: chartreuse;
+    font-style: italic;
+}

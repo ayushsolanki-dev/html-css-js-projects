@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/term_and_condition.js"></script>
+    <link rel="stylesheet" href="CSS/term_and_condition.css">
+</head>
+<body>
+    <div id="text_containner">
+        <br>
+        <span>1. If the answer is correct than the player win the corresponding of the price and proceeds to the next question.</span>
+        <br><br><br>
+        <span>2. If the answer is incorrect then the game ends.and the player takes the corresponding amount of the price.</span>
+        <br><br><br>
+        <span>3. The game ends either when the player gives an incorrect answer or successfully answer all 10 questions.</span>
+        <br><br><br>
+        <span>4. The player's total winnings are displayed at the end of the game.</span>
+        <br><br><br>
+        <span>5. The player has options to use lifelines during the game.</span>
+        <br><br><br>
+        <span>6. three lifelines are available:50:50, flip the question, and audience poll.</span>
+        <br><br><br>
+        <span>7. the player can use lifelines at any question, but only three lifelines are allowed in the entire game.</span>
+        <br><br><br>
+        <span>8. 50:50 lifelines: removes two incorrect options and display remaining two option and one wrong option.</span>
+        <br><br><br>
+        <span>9. flip the question lifelines: it replaces the currect questions with another questions.</span>
+        <br><br><br>
+        <span>10. audience poll: poll for the answer from the audience.</span>
+        <br><br>
+        <input type="checkbox" name="tc" value="terms" id="check_box" onchange="ONCHANGE_CHECK_BOX()"><span> i have read the terms and conditions and i hereby accept and agree to the terms and conditions as stated above.</span>
+    </div>
+    <input type="button" value="Let's Play" id="btn_one" disabled onclick="GOTO_PAGE_GAME_PAGE()">
+    <input type="button" value="Quit" id="quit1" onclick="GOTO_PAGE_FORM_PAGE()">
+    <div class="logo">
+        <img src="IMAGES/kbc_logo.png" id="logo_img">
+    </div>
+    <div class="amit_ji">
+        <img src="IMAGES/amit_ji.png" id="amit_img">
+    </div>
+    <audio autoplay>
+        <source src="MUSIC/title_track_audio_kbc.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="unit_con">Unit Converter</h1>
+        <input type="text" class="value_box" id="input_value" onkeyup="update_value()" onkeypress="return ONKEYPRESS_KEYCODE(event)">
+        <h4 class="unit_1">Unit</h4>
+        <h4 class="to_converter_1">To Converter</h4>
+
+        
+        <select id="op" onchange="meter_converter()" class="meter_one">
+        <option value="sc">select_options</option>
+        <option value="meter">METER</option>
+        <option value="centimeter">CENTIMETER</option>
+        <option value="kilometer">KILOMETER</option>
+        </select>
+
+        <span class="equal_to">=</span>
+
+        <select id="op1" onchange="meter_converter()" class="Centimeter_one">
+            <option value="sc1">select_options</option>
+            <option value="centimeter">CENTEMETER</option>
+            <option value="kilometer">KILOMETER</option>
+            <option value="meter">METER</option>
+        </select>
+        <input type="text" class="result_one" id="result_id" readonly>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    Year :- <input type="text" id="year_id">
+    <br><br>
+    Select Months :- <select name="" id="op" disabled>
+        <option value="sc" >Select Months</option>
+        <option value="jan">Jan</option>
+        <option value="feb">Feb</option>
+        <option value="mar">Mar</option>
+        <option value="apr">Apr</option>
+        <option value="may">May</option>
+        <option value="jun">Jun</option>
+        <option value="jul">Jul</option>
+        <option value="aug">Aug</option>
+        <option value="sep">Sep</option>
+        <option value="oct">Oct</option>
+        <option value="nov">Nov</option>
+        <option value="dec">Dec</option>
+    </select>
+    <span id="leap_year_msg"></span>
+    <br><br>
+    Total Days In Months :- <input type="text" id="tdim" readonly disabled>
+    <br><br>
+    Employee Per Day Salary :- <input type="text" id="epds" disabled><span id="epds_msg"></span>
+    <br><br>
+    Employee Present Days :- <input type="text" id="epd" disabled>
+    <br><br>
+    Employee Absent Days :- <input type="text" id="ead" readonly disabled>
+    <br><br>
+    Allow CL :- <input type="radio" name="cl_radio" value="yes" id="cl_yes" disabled>YES
+                 <input type="radio" name="cl_radio" value="no" id="cl_no" disabled>NO
+    <br><br>
+    <div id="cl_box" style="display: none;">
+        Enter CL Days :- <input type="text" id="ecd" disabled>
+        <br><br>
+        Employee Total Present Days :- <input type="text" id="etpd" readonly disabled>
+        <br><br>
+        Employee Total Absent Days :- <input type="text" id="etad" readonly disabled>
+        <br><br>
+    </div>
+    Employee Salary :- <input type="text" id="es" readonly disabled>
+</body>
+</html>

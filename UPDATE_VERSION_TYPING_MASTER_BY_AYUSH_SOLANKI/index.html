@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body onload="f()">
+    <div id="container">
+        <span id="welcome_ji">welcome to typing master</span>
+        <div id="timer_box" style="display: none;">
+            <span id="hour_id"></span>
+            <span id="dot_one"></span>
+            <span id="minute_id"></span>
+            <span id="dot_two"></span>
+            <span id="second_id"></span>
+        </div>
+        <div id="left_box">
+            <textarea id="left_textarea_id" readonly></textarea>
+        </div>
+
+        <div id="child_left_box">
+            <label id="enter_word">Enter Words :- </label>
+            <input type="text" id="word_id" placeholder="Enter Number" onkeyup="ONKEYUP_WORDS()">
+            <input type="button" value="Start Test" id="start_btn" onclick="ONCLICK_START_BTN()" disabled>
+        </div>
+        <div id="right_box">
+            <div id="right_textarea_id" contenteditable="true" onkeyup="ONKEYUP_RIGHT_TEXTAREA()"></div>
+        </div>
+        <div id="child_right_box">
+            <input type="button" value="SUBMIT" id="submit" onclick="ONCLICK_SUBMIT_BTN()" disabled>
+            <span id="per_second"></span>
+            <span id="total_word"></span>
+            <label for="" id="cw">Correct Words :- </label>
+            <input type="text" id="correct_id" readonly>
+            <label for="" id="icw">InCorrect Words :- </label>
+            <input type="text" id="incorrect_id" readonly>
+        </div>
+    </div>
+    <audio src="AUDIO/audio.mp3" id="audio_id" preload="auto"></audio>
+</body>
+</html>

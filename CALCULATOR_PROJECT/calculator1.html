@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <div id="box_one">
+        <input type="text" class="fild_one" id="result" disabled>
+    </div>
+    <div class="button_all">
+        <input type="button" disabled value="AC" onclick="clear_display()" style="margin-left: 10px; color: #4691dc;">
+        <input type="button" disabled value="DEL" style="margin-left: 10px; color: #4691dc;" onclick="delete_one_by_one()">
+        <input type="button" disabled value="%" onclick="document.getElementById('result').value+='%'" style="margin-left: 10px; color: #4691dc;">
+        <input type="button" disabled value="/" onclick="document.getElementById('result').value+='/'" style="margin-left: 10px; color: #4691dc;"><br><br>
+        <input type="button" disabled value="7" onclick="document.getElementById('result').value+=7" style="margin-left: 10px;">
+        <input type="button" disabled value="8" onclick="document.getElementById('result').value+=8" style="margin-left: 10px;">
+        <input type="button" disabled value="9" onclick="document.getElementById('result').value+=9" style="margin-left: 10px;">
+        <input type="button" disabled value="+" onclick="document.getElementById('result').value+='+'" style="margin-left: 10px; color: #4691dc;"><br><br>
+        <input type="button" disabled value="6" onclick="document.getElementById('result').value+=6" style="margin-left: 10px;">
+        <input type="button" disabled value="5" onclick="document.getElementById('result').value+=5" style="margin-left: 10px;">
+        <input type="button" disabled value="4" onclick="document.getElementById('result').value+=4" style="margin-left: 10px;">
+        <input type="button" disabled value="-" onclick="document.getElementById('result').value+='-'" style="margin-left: 10px; color: #4691dc;"><br><br>
+        <input type="button" disabled value="3" onclick="document.getElementById('result').value+=3" style="margin-left: 10px;">
+        <input type="button" disabled value="2" onclick="document.getElementById('result').value+=2" style="margin-left: 10px;">
+        <input type="button" disabled value="1" onclick="document.getElementById('result').value+=1" style="margin-left: 10px;">
+        <input type="button" disabled value="*" onclick="document.getElementById('result').value+='*'" style="margin-left: 10px; color: #4691dc;"><br><br>
+        <input type="button" disabled value="0" onclick="document.getElementById('result').value+=0" style="margin-left: 10px;">
+        <input type="button" disabled value="00" onclick="document.getElementById('result').value+='00'" style="margin-left: 10px;">
+        <input type="button" disabled value="." onclick="document.getElementById('result').value+='.'" style="margin-left: 10px;">
+        <input type="button" disabled value="=" onclick="calci()" style="margin-left: 10px; color: #4691dc;">
+    </div><br>
+    <button id="btn_on" class="on_btn" value="on" onclick="on_fn()">ON</button>
+    <button id="btn_off" class="off_btn" value="off" onclick="off_fn()">OFF</button>
+</body>
+</html>

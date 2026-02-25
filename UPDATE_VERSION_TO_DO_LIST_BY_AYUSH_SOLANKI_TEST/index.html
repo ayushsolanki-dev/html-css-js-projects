@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- LINK FOR CONNECTION FOR EX :- JS AND CSS -->
+    <!-- THIRD LINK FOR FA FA ICONS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!-- THIS LINK IS USED FOR FONT FAMILY FROM GOOGLE FONT-->
+
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--  -->
+    
+</head>
+<body>
+    <!-- CENTER TAG START -->
+    <center>
+        <!-- MAIN CONTAINER START -->
+        <div id="container">
+            <!-- FORM START -->
+            <form action="" onsubmit="return FORM_VALIDATION()">
+
+                <!-- UANME INPUT START -->
+                <label for="" id="name_lable">Name :- </label>
+                <input type="text" id="uname_id" onfocus="ONFOCUS_UNAME()" onkeyup="ONKEYUP_UNAME()">
+                <span id="uname_show_msg"></span>
+                <!-- UNAME INPUT END -->
+
+                <!-- EMAIL INPUT START -->
+                <label for="" id="email_lable">Email :- </label>
+                <input type="text" id="email_id" onfocus="ONFOCUS_EMAIL()" onkeyup="ONKEYUP_EMAIL()">
+                <span id="email_show_msg"></span>
+                <!-- EMAIL INPUT START -->
+            
+                <!-- PASSWORD INPUT START -->
+                <label for="" id="pass_lable">Password :- </label>
+                <input type="password" id="pass_id" onfocus="ONFOCUS_PASS()" onkeyup="ONKEYUP_PASS()">
+                <i class="fa fa-eye-slash" id="toggle_eye" onclick="TOGGLE_PASSWORD()"></i>
+                <span id="pass_show_msg"></span>
+                <!-- PASSWORD INPUT END -->
+                <!--  -->
+                <label for="" id="city_id">City :-</label>
+                <select id="op" onchange="ONCHANGE_CITY()">
+                    <option value="sc">Select City</option>
+                    <option value="indore">Indore</option>
+                    <option value="ujjain">Ujjain</option>
+                    <option value="bhopal">Bhopal</option>
+                    <option value="pune">Pune</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="dewas">Dewas</option>
+                </select>
+                <!--  -->
+                <!--  -->
+                <label for="" id="gender_lable">Gender :- </label>
+                <div id="gender_box">
+                    <input type="radio" class="gender" value="male" onchange="ONCHANGE_GENDER_BTN()">Male
+                    <input type="radio" class="gender" value="female" onchange="ONCHANGE_GENDER_BTN()">Female
+                </div>
+                <!--  -->
+                <!--  -->
+                <label for="" id="hobby_id">Hobby :- </label>
+                <div id="checkbox_btn_box">
+                    <input type="checkbox" class="check_btn" value="cricket" onchange="HOBBY_BTN()">Cricket
+                    <input type="checkbox" class="check_btn" value="football" onchange="HOBBY_BTN()">Football
+                    <input type="checkbox" class="check_btn" value="baseboll" onchange="HOBBY_BTN()">Baseboll
+                    <input type="checkbox" class="check_btn" value="badminton" onchange="HOBBY_BTN()">Badminton
+                </div>
+                <!--  -->
+                <!-- THIS DIV FOR PASSWORD VALIDATION START -->
+                <div id="password_validation" style="display: none;">
+                    <span id="p_v">Password Validation</span><br>
+                    <span id="six_digit">At Least 6 Character</span><br>
+                    <span id="upper_char">At Least 1 Upper Char</span><br>
+                    <span id="lower_char">At Least 1 Lower Char</span><br>
+                    <span id="number_digit">At Least 1 Number Digit</span><br>
+                    <span id="special_char">At Least 1 Special Char</span><br>
+                </div>
+                <!-- THIS DIV FOR PASSWORD VALIDATION END -->
+
+                <!-- THIS IS BTN IS USED FOR SUBMIT START -->
+                <input type="button" value="SUBMIT" id="sub" disabled onclick="ONCLICK_SUBMIT_BTN()">
+                <!-- THIS IS BTN IS USED FOR SUBMIT END -->
+
+                <!-- THERE ARE 3 EVENTS ARE USED IN THIS PROGRAM -->
+                <!-- 1 -> ONCLICK  :- ONCLICK IS USED FOR BTN-->
+                <!-- 2 -> ONKEYUP  :- ONKEYUP IS USED FOR VALIDATION-->
+                <!-- 3 -> ONFOCUS  :- ONFOCUS IS ALSO USED FOR VALIDATION-->
+            </form>
+            <!-- FORM END -->
+
+            <!-- TODO_LIST BOX START -->
+            <div id="to_do_list" style="display: none;">
+                <!-- TABLE TAG START -->
+                <table id="one" border="2">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>City</th>
+                        <th>Gender</th>
+                        <th>Hobby</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </table>
+                <!--TABLE TAG END -->
+            </div>
+            <!-- TODO_LIST BOX END  -->
+        </div>
+        <!-- NAIN CONTAINER END -->
+    </center>
+    <!-- CENTER TAG END -->
+</body>
+</html>

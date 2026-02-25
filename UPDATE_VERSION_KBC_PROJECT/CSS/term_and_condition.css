@@ -1,0 +1,106 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body
+{
+    background-color: rgb(90, 14, 90);
+    overflow: hidden;
+}
+
+span
+{
+    color: #fff;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+#text_containner
+{
+    margin-left: 5px;
+}
+
+#check_box
+{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+#btn_one
+{
+    margin-top: 40px;
+    margin-left: 100px;
+    height: 60px;
+    width: 180px;
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 15px 0px 15px 0px;
+    font-weight: 550;
+
+    &:disabled,
+    fieldset:disabled
+    {
+        cursor: not-allowed;
+    }
+}
+
+#quit1
+{
+    margin-left: 40px;
+    height: 60px;
+    width: 180px;
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 15px 0px 15px 0px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+#logo_img
+{
+    height: 200px;
+    width: 200px;
+    animation: ROTATING_IMG 2s linear infinite;
+    cursor: text;
+}
+
+@keyframes ROTATING_IMG
+{
+    0%{transform: rotate(1deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.logo
+{
+    margin-top: -500px;
+    margin-left:850px;
+}
+
+.amit_ji
+{
+    margin-top: -330px;
+    margin-left: 1040px;
+}
+
+#amit_img
+{
+    height: 550px;
+    width: 450px;   
+}
+
+.add_class_disabled
+{
+    &:disabled,
+    fieldset:disabled
+    {
+        cursor: not-allowed;
+    }
+}
+
